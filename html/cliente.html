@@ -1,0 +1,51 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugrua.com</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" 
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <link rel="stylesheet" href="/css/cliente.css">
+ </head>
+
+   <body>
+
+      <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+       integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin="">
+      </script>
+
+         <div id="mi_mapa"></div>   
+         
+         <div class="contenedor">
+               <div class="entrada">
+                  <form action="/index.html">
+                     <select id="cars" name="cars">
+                     <option value="" disabled selected>TIPO DE VEHICULO</option>
+                       <option value="volvo">Moto</option>
+                       <option value="saab">Carro</option>
+                       <option value="fiat">Camioneta</option>
+                       <option value="audi">Furgoneta</option>
+                     </select><br>
+
+                     <div>
+                        <input type="text" id="origen" name="origen" placeholder="Ubicacion"><br>
+                        <input type="text" id="destino" name="destino" placeholder="Destino"><br>
+                        <button type="button" id="trazar">Confirmar</button>
+                     </div>
+
+                     
+                   </form>
+               </div>
+               <div class="nav">
+                  <img src="/img/Menu_icon_2_icon-icons.com_71856.png" alt="Menú" class="iconmenu">
+
+               </div>
+          </div>
+      <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+      <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script> <!-- Incluye esto si utilizas geocodificación -->
+      <script src="/script/mapa.js"></script>
+      
+   </body>
+
+ </html>
