@@ -1,4 +1,4 @@
 
  setTimeout(function() {
     window.location.href = "html/cliente.html"; 
-}, 3000); // 5000 milisegundos = 5 segundos
+}, 5000); // 5000 milisegundos = 5 segundos
